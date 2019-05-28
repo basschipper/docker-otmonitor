@@ -8,7 +8,7 @@ Depending on your configuration you would start the image with something like:
 
 ```bash
 docker run -d -p 8080:8080 \
-  -v /src/otmonitor/otmonitor.conf:/app/otmonitor.conf
+  -v $(pwd)/otmonitor.conf:/data/otmonitor.conf
   basschipper/docker-otmonitor:latest
 ```
 
